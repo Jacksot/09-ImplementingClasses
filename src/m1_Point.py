@@ -73,8 +73,8 @@ class Point(object):
     def get_number_of_moves_made(self):
         return self.move_made
 
-    def get_distance_from(self):
-        self.distance = self.distance +
+    def get_distance_from(self, point):
+        return math.sqrt(((point.y-self.y)**2) + (point.x-self.x)**2)
 
 
 
