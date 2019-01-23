@@ -77,7 +77,9 @@ class Point(object):
         return math.sqrt(((point.y-self.y)**2) + (point.x-self.x)**2)
 
     def get_distance_from_start(self):
-        return
+        X = self.x
+        Y = self.y
+        return math.sqrt(((Y - self.y) ** 2) + (X - self.x) ** 2)
 
 
 def run_test_init():
